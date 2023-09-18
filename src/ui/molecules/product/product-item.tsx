@@ -7,8 +7,10 @@ export type ProductItemProps = {
 } & ProductDescriptionProps;
 
 export const ProductItem = ({image, ...description}: ProductItemProps) => (
-  <div className="bg-white flex flex-col gap-8 p-4">
-    <ProductImage {...image} />
-    <ProductDescription {...{...description}} />
-  </div>
+  <li>
+    <article className="bg-white flex flex-col gap-8 p-4">
+      <ProductImage {...image} />
+      <ProductDescription {...{...description}} />
+    </article>
+  </li>
 )
